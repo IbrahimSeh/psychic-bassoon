@@ -1,0 +1,7 @@
+{
+  "dbConfig": {
+    "url": "mongodb+srv://ibrahimseh:2Abra2Seh@autoalliancecluster.gankyau.mongodb.net/AutoAlliance?retrywrites=true&w=majority"
+  },
+  "jwt": "eqbyuybbwefuefhh",
+  "file": "pro"
+}
