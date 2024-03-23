@@ -1,6 +1,6 @@
 (Client)
  1 - in package.json 
-   ,"proxy": "http://localhost:8181"
+   (no)//,"proxy": "http://localhost:8181"
    "private": true, -> "homepage": ".",
 
  2 -  add .env (file)
