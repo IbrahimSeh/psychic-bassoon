@@ -28,6 +28,9 @@ const HomePage = () => {
     userID = jwt_decode(localStorage.getItem("token"))._id;
   }
 
+  // const axiosInstance = axios.create({
+  //   baseURL: process.env.REACT_APP_API_URL,
+  // });
   //first useEffect when page load
   useEffect(() => {
     axios
@@ -36,7 +39,7 @@ const HomePage = () => {
         filterFunc(data);
       })
       .catch((err) => {
-        console.log("err from axios", err);
+        console.log("err from axios HomePage", err);
         toast.error("Oops");
       });
   }, []);
