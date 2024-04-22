@@ -28,18 +28,18 @@ const HomePage = () => {
     userID = jwt_decode(localStorage.getItem("token"))._id;
   }
 
-  // const axiosInstance = axios.create({
-  //   baseURL: process.env.REACT_APP_API_URL,
-  // });
+  const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+  });
   //first useEffect when page load
   useEffect(() => {
-    axios
+    axiosInstance
       .get("/cars")
       .then(({ data }) => {
         filterFunc(data);
       })
       .catch((err) => {
-        console.log("err from axios HomePage", err);
+        console.log("err from axiosInstance HomePage", err);
         toast.error("Oops");
       });
   }, []);
@@ -95,7 +95,7 @@ const HomePage = () => {
 
   const handleDeleteFromInitialCarsArr = async (id) => {
     try {
-      await axios.delete("/cars/" + id);
+      await axiosInstance.delete("/cars/" + id);
       setCarsArr((newCarsArr) => newCarsArr.filter((item) => item._id != id));
     } catch (err) {
       console.log("error when deleting", err.response.data);
