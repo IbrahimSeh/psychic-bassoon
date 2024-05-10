@@ -74,7 +74,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/public", express.static(path.join(__dirname, "public")));
-//initialData();problem node app.js -> err from initial MongooseError: Operation `cars.find()` buffering timed out after 10000ms
+initialData();
 
 app.use("/api", apiRouter);
 app.use((req, res, next) => {

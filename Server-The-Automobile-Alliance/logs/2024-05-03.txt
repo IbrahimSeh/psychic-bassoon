@@ -1,0 +1,2 @@
+2024-05-03 14:01:16.894Z 400 POST http://localhost:8181/api/users/login Bad Request
+2024-05-03 14:06:20.697Z 400 GET http://localhost:8181/api/VAR/64f32a50d130fed8a293aed3?manu=[a,b,c]&type=[x,y,z]&data1 Bad Request
