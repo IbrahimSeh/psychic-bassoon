@@ -7,6 +7,8 @@ const chalk = require("chalk");
 const fs = require('fs/promises');
 const bodyParser = require('body-parser')
 const portNumber = "8182";
+const dotenv = require('dotenv');
+dotenv.config();
 //const initialData = require("./initialData/initialData");
 
 const apiRouter = require("./routes/api");
