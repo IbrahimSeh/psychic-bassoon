@@ -28,9 +28,12 @@ const HomePage = () => {
     userID = jwt_decode(localStorage.getItem("token"))._id;
   }
 
-  // const axiosInstance = axios.create({
-  //   baseURL: process.env.REACT_APP_API_URL,
-  // });
+  const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+  });
+
+  //console.log("REACT_APP_API_URL = " + process.env.REACT_APP_API_URL);
+
   //first useEffect when page load
   useEffect(() => {
     axios

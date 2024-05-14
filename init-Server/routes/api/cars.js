@@ -10,7 +10,7 @@ const normalizeCar = require("../../model/mongodb/cars/helpers/normalizationCar"
 const tokenMw = require("../../middleware/verifyTokenMW");
 const isAdminMW = require("../../middleware/isAdminMW");
 const { isValidObjectId } = require("../../utils/objectID/verifyObjectID");
-
+//http://89.116.111.211/api/
 //http://localhost:8181/api/cars v
 router.get("/", async (req, res) => {
     try {
