@@ -6,7 +6,6 @@ const cors = require("cors");
 const chalk = require("chalk");
 const fs = require('fs/promises');
 const bodyParser = require('body-parser')
-const portNumber = "8182";
 const dotenv = require('dotenv');
 dotenv.config();
 //const initialData = require("./initialData/initialData");
@@ -25,7 +24,7 @@ app.use(cors());
 async function writetoFile(tokens, req, res) {
     try {
         const fileName = new Date().toISOString().replace("T", " ").split(' ')[0] + ".txt";
-        const content = new Date().toISOString().replace("T", " ") + " " + tokens.status(req, res) + " " + tokens.method(req, res) + " " + `http://localhost:${portNumber}` + tokens.url(req, res) + " " + res.statusMessage + "\n";
+        const content = new Date().toISOString().replace("T", " ") + " " + tokens.status(req, res) + " " + tokens.method(req, res) + " " + `http://localhost:${process.env.PORT}` + tokens.url(req, res) + " " + res.statusMessage + "\n";
         await fs.writeFile(path.join(__dirname, `logs/${fileName}`), content, { flag: 'a+' });
     } catch (err) {
         console.log(err);
@@ -42,7 +41,7 @@ app.use(
         const loggerApplication = [
             new Date().toISOString().replace("T", " "),
             tokens.method(req, res),
-            `http://localhost:${portNumber}` + tokens.url(req, res),
+            `${process.env.IP_ADDRESS}:${process.env.PORT}` + tokens.url(req, res),
             tokens.status(req, res),
             "-",
             tokens["response-time"](req, res),

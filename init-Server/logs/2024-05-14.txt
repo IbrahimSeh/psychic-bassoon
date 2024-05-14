@@ -1,0 +1,10 @@
+2024-05-14 11:42:45.610Z 400 POST http://localhost:8181/api/users/login Bad Request
+2024-05-14 11:43:51.043Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:44:33.160Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:45:35.507Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:45:44.318Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:46:27.483Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:46:52.492Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:47:25.023Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:47:32.527Z 400 POST http://localhost:8181/api/users Bad Request
+2024-05-14 11:54:13.265Z 400 POST http://localhost:8181/api/users/login Bad Request

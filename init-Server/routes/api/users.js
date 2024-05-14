@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-//const hashService = require("../../utils/hash/hashService");
-const generateHash = require("../../utils/hash/bcrypt");
+const hashService = require("../../utils/hash/hashService");
+const { generateHash } = require("../../utils/hash/bcrypt");
 const joiRegisterValidation = require("../../validation/joi/registerValidation");
 const joiLoginValidation = require("../../validation/joi/loginValidation");
 const joiEditValidation = require("../../validation/joi/EditValidation");
@@ -19,6 +19,7 @@ const { isValidObjectId } = require("../../utils/objectID/verifyObjectID");
 
 //http://localhost:8181/api/users v
 router.post("/", async (req, res) => {
+    console.log('in post sigin');
     try {
         /*
          * joi
@@ -29,7 +30,9 @@ router.post("/", async (req, res) => {
          * response user created
          */
         await joiRegisterValidation.validateRegisterSchema(req.body);
+        console.log('in post sigin 1');
         req.body.password = await generateHash(req.body.password);
+        console.log('in post sigin 2');
         req.body = normalizeUser(req.body);
         await userServiceMongo.registerUser(req.body);
         res.json(req.body);
@@ -47,6 +50,7 @@ router.post("/", async (req, res) => {
 
 //http://localhost:8181/api/users/login v
 router.post("/login", async (req, res) => {
+    console.log('in post login');
     try {
         /**
          * *joi
