@@ -1,0 +1,52 @@
+2024-05-25 06:22:08.175Z 400 GET http://localhost:8181/api/users/664350cdf3f9ac938eddf832 Bad Request
+2024-05-25 06:22:28.466Z 400 GET http://localhost:8181/api/users/664350cdf3f9ac938eddf832 Bad Request
+2024-05-25 06:28:34.262Z 400 GET http://localhost:8181/api/users/664350cdf3f9ac938eddf832 Bad Request
+2024-05-25 06:28:39.012Z 400 GET http://localhost:8181/api/users/664350cdf3f9ac938eddf832 Bad Request
+2024-05-25 08:29:42.650Z 400 POST http://localhost:8181/api/users/login Bad Request
+2024-05-25 08:29:59.101Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:30:20.699Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:30:54.472Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:31:27.390Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:31:51.316Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:32:08.444Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:32:22.992Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:32:27.777Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:37:56.469Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:48:45.543Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:48:52.473Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:49:00.467Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:49:42.356Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:51:46.096Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:52:29.671Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 08:52:36.599Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:00:08.557Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:00:27.256Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:00:57.454Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:02:01.980Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:02:09.313Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:02:43.456Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:03:31.453Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:03:45.002Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:05:14.693Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:05:38.117Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:05:56.499Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:07:58.084Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:11:05.288Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:12:29.571Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:13:11.313Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:13:47.824Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:14:39.296Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:16:12.471Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:16:27.059Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:18:17.503Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:18:45.109Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:24:26.482Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 09:25:35.482Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 12:20:35.024Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 12:20:43.944Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 12:22:51.595Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 12:40:23.170Z 401 GET http://localhost:8181/api/users/664352a3673ffb8f76e68b26 Unauthorized
+2024-05-25 12:41:08.821Z 401 GET http://localhost:8181/api/cars/get-my-fav-cars Unauthorized
+2024-05-25 12:42:18.434Z 401 GET http://localhost:8181/api/cars/get-my-fav-cars Unauthorized
+2024-05-25 12:48:54.365Z 401 GET http://localhost:8181/api/cars/get-my-fav-cars Unauthorized
+2024-05-25 12:49:45.523Z 401 GET http://localhost:8181/api/cars/get-my-fav-cars Unauthorized

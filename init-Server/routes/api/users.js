@@ -19,7 +19,6 @@ const { isValidObjectId } = require("../../utils/objectID/verifyObjectID");
 
 //http://localhost:8181/api/users v
 router.post("/", async (req, res) => {
-    console.log('in post sigin');
     try {
         /*
          * joi

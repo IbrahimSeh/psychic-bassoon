@@ -36,6 +36,10 @@ const LogInPage = () => {
     setInputState({ email: "", password: "" });
   };
 
+  const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+  });
+
   const handleBtnClick = async (ev) => {
     try {
       const joiResponse = validateLoginSchema(inputState);
@@ -44,8 +48,9 @@ const LogInPage = () => {
         return;
       }
 
-      const { data } = await axios.post("/users/login", inputState);
+      const { data } = await axiosInstance.post("/users/login", inputState);
       localStorage.setItem("token", data.token);
+      localStorage.setItem("REACT_APP_API_URL", "http://localhost:8181/api/");
       loggedIn();
 
       //move to homepage

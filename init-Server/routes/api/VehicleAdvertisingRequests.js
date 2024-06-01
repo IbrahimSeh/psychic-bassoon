@@ -61,7 +61,7 @@ router.get("/:id", async (req, res) => {
 //http://localhost:8181/api/VAR v
 router.post("/", tokenMw, isSubscriptionMw, async (req, res) => {
     try {
-        await joiCarsValidation.createCarValidation(req.body);
+        await joiCarsValidation.validateCarSchema(req.body);
         let normalVAR = await normalizeCar(req.body, jwt.decode(req.headers["x-auth-token"])._id);
         const dataFromMongoose = await varServiceMongo.createVAR(normalVAR);
         res.json(dataFromMongoose);

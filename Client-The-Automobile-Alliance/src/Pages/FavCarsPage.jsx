@@ -36,9 +36,13 @@ const FavCarsPage = () => {
     userID = jwt_decode(localStorage.getItem("token"))._id;
   }
 
+  const axiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+  });
+
   //first useEffect when page load
   useEffect(() => {
-    axios
+    axiosInstance
       .get("/cars/get-my-fav-cars")
       .then(({ data }) => {
         filterFunc(data);

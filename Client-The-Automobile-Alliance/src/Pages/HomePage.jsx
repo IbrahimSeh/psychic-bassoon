@@ -32,11 +32,12 @@ const HomePage = () => {
     baseURL: process.env.REACT_APP_API_URL,
   });
 
-  //console.log("REACT_APP_API_URL = " + process.env.REACT_APP_API_URL);
+  // console.log("REACT_APP_API_URL = " + process.env.REACT_APP_API_URL);
+  // console.log("axios = " + axios);
 
   //first useEffect when page load
   useEffect(() => {
-    axios
+    axiosInstance
       .get("/cars")
       .then(({ data }) => {
         filterFunc(data);

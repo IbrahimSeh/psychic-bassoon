@@ -26,7 +26,7 @@ import useNumberOfRequest from "./hooks/useNumberOfRequest";
 import Router from "./routes/Router";
 import NavBar from "./components/Navbar/Navbar";
 import BCarFooter from "./components/Footer/BCarFooter";
-import useLogout from "./hooks/useLogout";
+//import useLogout from "./hooks/useLogout";
 const light = {
   palette: {
     mode: "light",
