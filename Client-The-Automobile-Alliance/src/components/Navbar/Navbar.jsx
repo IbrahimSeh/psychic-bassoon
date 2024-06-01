@@ -36,6 +36,7 @@ import {
   userLoggedIn,
   userLoggedInLogo,
 } from "./navBarLink";
+import LeftSideBar from "../LeftDrawer/LeftSideBar";
 
 const Navbar = () => {
   const isLoggedIn = useSelector(
@@ -84,14 +85,16 @@ const Navbar = () => {
 
   const payload = useSelector((bigState) => bigState.authSlice.payload);
   const dispatch = useDispatch();
+  const [ToOpen, setToOpen] = React.useState(false);
 
   const logoutClick = () => {
     localStorage.removeItem("token");
     dispatch(authActions.logout());
   };
 
-  const sidebarClick = () => {
-    console.log("sidebarClick");
+  const toggleSidebar = (ToOpen) => {
+    console.log("toggleSidebar");
+    setToOpen(ToOpen);
   };
 
   const navbarstyle = {
@@ -117,12 +120,13 @@ const Navbar = () => {
       position="static"
     >
       <Container maxWidth="xl">
+        <LeftSideBar ToOpen={ToOpen} />
         <Toolbar>
           <Box sx={{ ml: -5, mr: 2 }}>
             <IconButton
               color="primary"
               aria-label="side bar"
-              onClick={sidebarClick}
+              onClick={toggleSidebar}
             >
               <Avatar alt="user Avatar" src={sidebar} />
             </IconButton>

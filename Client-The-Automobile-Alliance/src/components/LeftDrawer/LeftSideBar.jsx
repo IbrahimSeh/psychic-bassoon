@@ -14,8 +14,8 @@ import MailIcon from "@mui/icons-material/Mail";
 const LeftSideBar = ({ ToOpen }) => {
   const [open, setOpen] = React.useState(false);
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
+  const toggleDrawer = (ToOpen) => () => {
+    setOpen(ToOpen);
   };
 
   const DrawerList = (
@@ -50,8 +50,8 @@ const LeftSideBar = ({ ToOpen }) => {
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      {/* <Button onClick={toggleDrawer(true)}>Open drawer</Button> */}
+      <Drawer open={ToOpen} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>
