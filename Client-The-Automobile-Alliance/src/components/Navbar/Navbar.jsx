@@ -9,7 +9,10 @@ import {
   Avatar,
   Tooltip,
   Badge,
+  IconButton,
 } from "@mui/material";
+import Fade from "@mui/material/Fade";
+import ViewSidebarIcon from "@mui/icons-material/ViewSidebar";
 import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -17,11 +20,11 @@ import jwt_decode from "jwt-decode";
 import ROUTES from "../../routes/ROUTES";
 import NavLinkComponent from "./NavLinkComponent";
 import { authActions } from "../../redux/auth";
-import Fade from "@mui/material/Fade";
 import HumborgerNavbar from "./HumborgerNavbar";
 import ToggleColorMode from "./ToggleColorMode";
 import SearchNavBar from "./SearchNavBar";
 import logo from "../../assets/images/car-showroom.png";
+import sidebar from "../../assets/images/sidebar.png";
 import DropDownNavLink from "./DropDownNavLink";
 import "../../css/Navbar.css";
 import {
@@ -81,10 +84,16 @@ const Navbar = () => {
 
   const payload = useSelector((bigState) => bigState.authSlice.payload);
   const dispatch = useDispatch();
+
   const logoutClick = () => {
     localStorage.removeItem("token");
     dispatch(authActions.logout());
   };
+
+  const sidebarClick = () => {
+    console.log("sidebarClick");
+  };
+
   const navbarstyle = {
     backgroundColor: "#0f0d35",
   };
@@ -109,6 +118,15 @@ const Navbar = () => {
     >
       <Container maxWidth="xl">
         <Toolbar>
+          <Box sx={{ ml: -5, mr: 2 }}>
+            <IconButton
+              color="primary"
+              aria-label="side bar"
+              onClick={sidebarClick}
+            >
+              <Avatar alt="user Avatar" src={sidebar} />
+            </IconButton>
+          </Box>
           <NavLink activeclassname="is-active" to="/Home">
             <Avatar alt="Logo" src={logo} />
           </NavLink>
